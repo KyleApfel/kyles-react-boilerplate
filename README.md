@@ -3,7 +3,8 @@
 ## Synopsis
 Using https://github.com/coryhouse/react-slingshot as the bones, I built, in my opinion, a more agreeable file and folder structure.As seen below: 
 
-** src/ **
+**src/**
+`
 ├── favicon.ico
 ├── features
 │   └── blank
@@ -42,6 +43,7 @@ Using https://github.com/coryhouse/react-slingshot as the bones, I built, in my 
 │   ├── configureStore.prod.js
 │   └── store.spec.js
 └── webpack-public-path.js
+`
 
 ## Get Started
 
