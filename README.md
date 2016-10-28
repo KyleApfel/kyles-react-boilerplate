@@ -4,44 +4,45 @@
 Using https://github.com/coryhouse/react-slingshot as the bones, I built, in my opinion, a more agreeable file and folder structure.As seen below: 
 
 **src/**
+__
 `
-├── favicon.ico
-├── features
-│   └── blank
-│       ├── actionTypes.js
-│       ├── actions.js
-│       ├── components
-│       │   ├── Blank.js
-│       │   ├── Blank.scss
-│       │   └── BlankTextInput.js
-│       ├── constants.js
-│       ├── container.js
-│       ├── index.js
-│       ├── initialState.js
-│       └── reducer.js
-├── global-constants
-├── index.ejs
-├── index.js
-├── lib
-├── reducers
-│   └── index.js
-├── routes.js
-├── static-components
-│   ├── AboutPage.js
-│   ├── AboutPage.spec.js
-│   ├── App.js
-│   ├── Footer.js
-│   ├── Header.js
-│   ├── HomePage.js
-│   └── NotFoundPage.js
-├── static-styles
-│   ├── about-page.css
-│   └── styles.scss
-├── store
-│   ├── configureStore.dev.js
-│   ├── configureStore.js
-│   ├── configureStore.prod.js
-│   └── store.spec.js
+├── favicon.ico__
+├── features__
+│   └── blank__
+│       ├── actionTypes.js__
+│       ├── actions.js__
+│       ├── components__
+│       │   ├── Blank.js__
+│       │   ├── Blank.scss__
+│       │   └── BlankTextInput.js__
+│       ├── constants.js__
+│       ├── container.js__
+│       ├── index.js__
+│       ├── initialState.js__
+│       └── reducer.js__
+├── global-constants__
+├── index.ejs__
+├── index.js__
+├── lib__
+├── reducers__
+│   └── index.js__
+├── routes.js__
+├── static-components__
+│   ├── AboutPage.js__
+│   ├── AboutPage.spec.js__
+│   ├── App.js__
+│   ├── Footer.js__
+│   ├── Header.js__
+│   ├── HomePage.js__
+│   └── NotFoundPage.js__
+├── static-styles__
+│   ├── about-page.css__
+│   └── styles.scss__
+├── store__
+│   ├── configureStore.dev.js__
+│   ├── configureStore.js__
+│   ├── configureStore.prod.js__
+│   └── store.spec.js__
 └── webpack-public-path.js
 `
 
