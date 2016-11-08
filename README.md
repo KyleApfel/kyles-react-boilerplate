@@ -8,3 +8,7 @@ Using https://github.com/coryhouse/react-slingshot as the bones, I built, in my 
 1. `npm i && npm start`
 2. Done
 3. Play around!
+
+## Tools
+
+I've automated the creation of features or "dynamic components". Simply run `./featurecreation.sh helloworld"` to create your new feature! 
