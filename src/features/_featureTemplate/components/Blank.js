@@ -22,7 +22,6 @@ const Blank = React.createClass ({
     let name  = e.target.name,
         value = e.target.value,
         path  = name.split ('.');
-console.log("hi")
 
     this.props.updateKeyPath (path, value)
   },
