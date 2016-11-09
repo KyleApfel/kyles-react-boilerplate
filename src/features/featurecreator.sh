@@ -30,14 +30,11 @@ cp -r _featureTemplate/ $feature/
 
 cd $feature/
 
-sed -i -deleteme "s/blank/$feature/g" container.js reducer.js components/Blank.js
-sed -i -deleteme "s/BLANK/$FEATURE/g" actionTypes.js actions.js reducer.js
-sed -i -deleteme "s/Blank/$Feature/g" container.js initialState.js reducer.js components/Blank.js
-mv components/Blank.js components/$Feature.js
-mv components/Blank.scss components/$Feature.scss
-mv components/BlankTextInput.js components/${Feature}TextInput.js
+#sed -i -deleteme "s/blank/$feature/g" container.js reducer.js components/component.js
+#sed -i -deleteme "s/BLANK/$FEATURE/g" actionTypes.js actions.js reducer.js
+#sed -i -deleteme "s/Blank/$Feature/g" container.js initialState.js reducer.js components/component.js
 
-rm *-deleteme components/*-deleteme
+#rm *-deleteme components/*-deleteme
 
 echo "Add to your reducer:"
 echo -e "${bold}${red}import ${feature}Reducer from '../features/$feature/reducer.js';${normal}${nc}"
