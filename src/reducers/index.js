@@ -1,10 +1,10 @@
-import { combineReducers } from 'redux';
-import blankReducer from '../features/blank/reducer.js';
-import {routerReducer} from 'react-router-redux';
+import { combineReducers }          from 'redux';
+import { routerReducer as routing } from 'react-router-redux';
+import template                     from '../features/_featureTemplate/reducer';
 
-const rootReducer = combineReducers({
-  blankData: blankReducer,
-  routing: routerReducer
+const rootReducer = combineReducers ({
+  template,
+  routing
 });
 
 export default rootReducer;

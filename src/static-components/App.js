@@ -16,22 +16,22 @@ const style = {
 var injectTapEventPlugin = require("react-tap-event-plugin");
 injectTapEventPlugin();
 
-const App = (props) => {
+const App = props => {
   return (
     <MuiThemeProvider>
-    <div>
-      <Paper style={style} zDepth={3}>
-      <Header 
-        headerText = "I'm The Header.js" 
-      />
-      <div style={{padding: 10}}>
-      {props.children}
+      <div>
+        <Paper style={style} zDepth={3}>
+        <Header 
+          headerText = "I'm The Header.js" 
+        />
+        <div style={{padding: 10}}>
+        {props.children}
+        </div>
+        <Footer 
+          footerText = "I'm The Footer.js"
+        />
+        </Paper>
       </div>
-      <Footer 
-        footerText = "I'm The Footer.js"
-      />
-      </Paper>
-    </div>
     </MuiThemeProvider>
   );
 };

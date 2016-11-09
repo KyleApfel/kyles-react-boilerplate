@@ -7,7 +7,7 @@
   }
 */
 
-import * as types   from './actionTypes';
+import * as types   from './types';
 import * as R       from 'ramda';
 import { CALL_API } from 'redux-api-middleware';
 
