@@ -1,2 +1,2 @@
-export const UPDATE_KEY_PATH = 'UPDATE_KEY_PATH';
-export const INCREMENT       = 'INCREMENT';
+export const BLANK_UPDATE_KEY_PATH = 'BLANK_UPDATE_KEY_PATH';
+export const BLANK_INCREMENT       = 'BLANK_INCREMENT';

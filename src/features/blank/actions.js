@@ -32,7 +32,7 @@ export const
 //updateKeyPath :: [Strings] -> String -> UpdateKeyPathObj
   updateKeyPath = R.curry(function(path, value) {
     return {
-      type: types.UPDATE_KEY_PATH,
+      type: types.BLANK_UPDATE_KEY_PATH,
       path,
       value
     };
@@ -40,7 +40,7 @@ export const
 
 //increment :: IncrementObj
   increment = R.curry (function () {
-    return { type: types.INCREMENT };
+    return { type: types.BLANK_INCREMENT };
   }),
 
 
