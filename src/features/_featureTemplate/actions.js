@@ -28,20 +28,12 @@ const
     return { [CALL_API]: obj }
   });
 
-export const
 //updateKeyPath :: [Strings] -> String -> UpdateKeyPathObj
-  updateKeyPath = R.curry(function(path, value) {
-    return {
-      type: types.BLANK_UPDATE_KEY_PATH,
-      path,
-      value
-    };
-  }),
+export const updateKeyPath = R.curry (function (path, value) {
+  return {
+    type: types.BLANK_UPDATE_KEY_PATH,
+    path,
+    value
+  };
+});
 
-//increment :: IncrementObj
-  increment = R.curry (function () {
-    return { type: types.BLANK_INCREMENT };
-  }),
-
-
-  nil = null;

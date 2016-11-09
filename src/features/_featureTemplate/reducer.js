@@ -1,12 +1,10 @@
-import * as R                   from 'ramda'
-import { BLANK_UPDATE_KEY_PATH
-       , BLANK_INCREMENT }      from './actionTypes';
+import * as R from 'ramda'
+import {}     from './types';
 
 const initialState = {
 };
 
 export default function reducer (state = initialState, action) {
-
   switch (action.type) {
     default: return state;
   }
