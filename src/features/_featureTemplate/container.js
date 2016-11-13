@@ -1,29 +1,25 @@
-import React, { PropTypes }        from 'react';
-import { connect }                 from 'react-redux';
-import { bindActionCreators as D } from 'redux';
-import * as actions                from './actions';
-import Component                   from './components/component';
+import React, { PropTypes }   from 'react';
+import { connect }            from 'react-redux';
+import { bindActionCreators } from 'redux';
+import {}                     from './actions';
+import Component              from './components/component';
 
-export const Container = props => {
-  return (
-    <Component { ...props } />
-  );
-};
+export const Container = props => <Component { ...props } />;
 
 Container.propTypes = {
-  routing : PropTypes.object.isRequired
+  // TODO Add PropTypes
 };
 
 function mapStateToProps (state) {
   return { 
-    routing : state.routing
+    // TODO Give parts of state to component
   };
 }
 
 function mapDispatchToProps (dispatch) {
-  // Import actions explicitly
   return { 
-    actions : D (actions, dispatch)
+    // TODO Import actions explicitly
+    //action : bindActionCreators (action, dispatch)
   };
 }
 

@@ -1,13 +1,16 @@
 import React, { PropTypes } from 'react';
 
-const style = { };
+const style = {};
 
 const Component = props => {
   return (
-    <div></div>
+    <div>
+      { '<COMPONENT_TEMPLATE />' }
+    </div>
   );
 }
 
-Component.propTypes = { };
+// TODO Add propTypes
+Component.propTypes = {};
 
 export default Component;

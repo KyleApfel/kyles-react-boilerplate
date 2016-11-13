@@ -3,9 +3,10 @@ import { Route, IndexRoute } from 'react-router';
 
 import App          from './static-components/App';
 import Template     from './features/_featureTemplate/container';
+import Test         from './features/test/container.js';
 
 export default (
   <Route path="/" component={App}>
-    <IndexRoute component={ Template }/>
+    <IndexRoute component={ Test }/>
   </Route>
 );
