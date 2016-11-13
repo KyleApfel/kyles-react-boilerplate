@@ -1,41 +1,29 @@
-import React, {PropTypes} from 'react';
-import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
-import * as actions from './actions';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Blank from './components/Blank';
+import React, { PropTypes }   from 'react';
+import { connect }            from 'react-redux';
+import { bindActionCreators } from 'redux';
+import {}                     from './actions';
+import Component              from './components/component';
 
-export const BlankPage = (props) => {
-  return (
-    <Blank
-      increment     = {props.actions.increment}
-      updateKeyPath = {props.actions.updateKeyPath}
-      blankData     = {props.blankData}
-      routing       = {props.routing}
-    />
-  );
+export const Container = props => <Component { ...props } />;
+
+Container.propTypes = {
+  // TODO Add PropTypes
 };
 
-BlankPage.propTypes = {
-  actions  : PropTypes.object.isRequired,
-  blankData: PropTypes.object.isRequired,
-  routing  : PropTypes.object.isRequired
-};
-
-function mapStateToProps(state) {
+function mapStateToProps (state) {
   return { 
-    blankData : state.blankData
-   ,routing   : state.routing
+    // TODO Give parts of state to component
   };
 }
 
-function mapDispatchToProps(dispatch) {
+function mapDispatchToProps (dispatch) {
   return { 
-    actions: bindActionCreators(actions, dispatch)
+    // TODO Import actions explicitly
+    //action : bindActionCreators (action, dispatch)
   };
 }
 
-export default connect(
+export default connect (
   mapStateToProps,
   mapDispatchToProps
-)(BlankPage);
+)(Container);

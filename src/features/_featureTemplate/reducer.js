@@ -1,21 +1,11 @@
-const isTrue = n => n === true;
-
 import * as R from 'ramda'
-import initialState from './initialState';
-import { 
-         BLANK_UPDATE_KEY_PATH
-       , BLANK_INCREMENT
-       } from './actionTypes';
+import {}     from './types';
 
-export default function blankReducer(state = initialState.Blank, action) {
-  let newState;
+const initialState = {
+};
 
+export default function reducer (state = initialState, action) {
   switch (action.type) {
-    case BLANK_UPDATE_KEY_PATH:
-      return R.compose(R.assocPath(action.path, action.value))(state)
-    case BLANK_INCREMENT:
-      return R.assocPath(["buttonData", "number"], (state.buttonData.number + 1), state)
-    default:
-      return state;
+    default: return state;
   }
 } 
