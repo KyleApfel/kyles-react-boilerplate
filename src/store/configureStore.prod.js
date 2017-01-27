@@ -1,7 +1,7 @@
 import {createStore, compose, applyMiddleware} from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import { apiMiddleware } from 'redux-api-middleware';
-import rootReducer from '../reducers';
+import rootReducer from '../reducers.js';
 
 export default function configureStore(initialState) {
   const middewares = [

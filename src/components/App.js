@@ -1,8 +1,6 @@
 import React, { PropTypes } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { Link, IndexLink } from 'react-router';
-import Header from './Header';
-import Footer from './Footer';
 import Paper from 'material-ui/Paper';
 
 const style = {
@@ -20,17 +18,7 @@ const App = props => {
   return (
     <MuiThemeProvider>
       <div>
-        <Paper style={style} zDepth={3}>
-        <Header 
-          headerText = "I'm The Header.js" 
-        />
-        <div style={{padding: 10}}>
         {props.children}
-        </div>
-        <Footer 
-          footerText = "I'm The Footer.js"
-        />
-        </Paper>
       </div>
     </MuiThemeProvider>
   );
