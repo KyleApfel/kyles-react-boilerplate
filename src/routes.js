@@ -9,5 +9,6 @@ export default (
   <Route path="/" component={App}>
     { /* <IndexRoute component={ Test }/> */}
     { /* <Route path="test" component={ Test }/> */}
+    <Route path="*" component={ NotFoundPage }/>
   </Route>
 );
