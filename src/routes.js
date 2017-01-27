@@ -8,5 +8,6 @@ import Template     from './features/_featureTemplate/container';
 export default (
   <Route path="/" component={App}>
     { /* <IndexRoute component={ Test }/> */}
+    { /* <Route path="test" component={ Test }/> */}
   </Route>
 );
